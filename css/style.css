@@ -1,0 +1,101 @@
+p {
+	margin: 50px auto;
+}
+
+.fsize-1 {
+	font-size: 10px;
+}
+.fsize-2 {
+	font-size: 15px;
+}
+.fsize-3 {
+	font-size: 20px;
+}
+
+body {
+	margin: 0;
+}
+
+.siteContent {
+    display: block;
+    position: relative;
+    width: 80%;
+    height: 200vh;
+    margin: 0 auto -150vh auto;
+    background: #fff;
+    z-index: 1;
+    box-shadow: 40px 0 65px 5px rgba(0, 0, 0, 0.5), 
+    		-40px 0 65px -5px rgba(0, 0, 0, 0.5);
+}
+
+.par-container {
+	height: 100vh;
+	position: relative;
+	z-index: 0;
+}
+
+
+.slide {
+	width: 50%;
+	position: absolute;
+	color: rgba(0,0,0,.5);
+	white-space: nowrap;
+    overflow: hidden;
+}
+
+.par-right .slide {
+	right: 5px;
+}
+
+.par-left {
+	float:left;
+	text-align: left;
+}
+
+.par-right {
+	float: right;
+	text-align: right;
+}
+
+.background {
+	font-size: 10px;
+}
+
+.midground {
+	padding-top: 15px;
+	font-size:15px;
+}
+
+.foreground {
+	padding-top: 30px;
+	font-size: 20px;
+}
+
+/*Margin Offsets to Prevent Initial Overlap*/
+
+.background p:nth-of-type(2),
+.foreground p:nth-of-type(3) {
+	margin-top: -5px;
+}
+
+.midground p:nth-of-type(2),
+.foreground p:nth-of-type(2),
+.foreground p:nth-of-type(4),
+.foreground p:nth-of-type(6),
+.foreground p:nth-of-type(7),
+.foreground p:nth-of-type(8),
+.midground p:nth-of-type(8) {
+	margin-top: -10px;
+}
+
+.background p:nth-of-type(3),
+.background p:nth-of-type(4),
+.background p:nth-of-type(5) {
+	margin-top: 55px;
+}
+
+.background p:nth-of-type(6),
+.background p:nth-of-type(9),
+.background p:nth-of-type(10) {
+	margin-top: 60px;
+}
